@@ -10,11 +10,11 @@ response=client.chat.complete(
     messages=[
         {
             "role":"system",
+            "temperature":0.6,
             "content":"""you are a professional teacher"
             "task":"you have to generate 5 quizs on user selected topic according to difficulty level"
             "template":"according to topic create 5 quizs multiple-choice questions+answers note that "
-            "check each question is right step by step and format via few shot"
-            "temperature":"0.6"""
+            "check each question is right step by step and format via few shot"""
         },
         {
             "role":"user",

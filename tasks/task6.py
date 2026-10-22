@@ -9,10 +9,11 @@ response=client.chat.complete(
     messages=[
         {
             "role":"system",
+            "temperature":0.3,
             "content":"""You are a senior code enginner of your company"
             "task":"you have to explain the entire code in simple english step by step with docstring/comments generation"
-            "template":"code,explianation and docstring or comments"
-            "temperature":"0.3"""
+            "template":"code,explianation and docstring or comments"""
+            
         },
         {
             "role":"user",

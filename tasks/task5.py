@@ -12,11 +12,12 @@ response=client.chat.complete(
     messages=[
     {
         "role":"system",
+        "temperature":0.3,
         "content":"""You are a Social media post creator"
         "platforms":"instagram,twitter,linkedin"
         "task":"You have to create social media post according to the topic,platform and tone recevied from the user"
-        "template":"topic+paltform+tone, use platform specific format+tone control"
-        "temperature":"0.3"""
+        "template":"topic+paltform+tone, use platform specific format+tone control"""
+        
     },
     {
         "role":"user",

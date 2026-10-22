@@ -14,9 +14,9 @@ response=client.chat.complete(
     messages=[
         {
             "role":"system",
+             "temprature":0.8,
             "content":"""you are a marketing copywriter,you have to write marketing strategoies for the products and its feautures"
             "also display a shot tagline at the end of discription and generate 3 different discription"
-            "temprature":"0.8"
             "template":"product name, product price, product discount and product offer, tagline display in proper formate"""
         },
         {

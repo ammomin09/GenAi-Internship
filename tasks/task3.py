@@ -10,13 +10,13 @@ model="mistral-small-latest",
     messages=[
         {
             "role":"system",
+             "temperature":0.3,
             "content":"""you are an email classifier, you have to classifiy the email based on email recevied from the user"
             "example1":"the user will have to pay for dilevery, so category will be billing"
             "example2":"the user want urgently his id card back that he lost, so category will be urgent"
             "example3":"if user email for any general purpose, ctaegory will be general"
             "example4":"if any spam email then gategory will be spam mail"
             "so classify the email as urgent,billing,general or spam based on email recevied then write appropriate reply"
-            "temperature":"0.3"
             "template":"email,category and reply"""
         },
         {

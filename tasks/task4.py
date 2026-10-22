@@ -9,12 +9,13 @@ response=client.chat.complete(
     messages=[
         {
             "role":"system",
+            "temperature":0.2,
             "content":"""You are an action items extractor ,you have to extract action items from transcript"
             "chain of thought":"first extract action itmes from transcript then reply with 2 lines of summary"
             "exapmle":"in company meeting it is decided to make new office at baroda and all production cost will be provided from "
             "company funds and last deadline will be 20/12/2026, so action items will be new office, where at baroda and deadline"
-            "template":"note action items, then reply"
-            "temperature":"0.2"""
+            "template":"note action items, then reply"""
+            
         },
         {
             "role":"user",

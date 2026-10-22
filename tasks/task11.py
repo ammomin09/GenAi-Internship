@@ -13,12 +13,13 @@ response=client.chat.complete(
     messages=[
         {
             "role":"system",
+            "temperature":0.2,
             "content":"""You are review sentiment analyzer"
             "task":"you have to review all the user's reviews in professional way"
             "template":"first review all then classify each as positive/negative or nuetral"
             " based on user's reviews then overall summmary of what customers like/dislike use zero-shot and print at the end how many positive vs negative reviews"
-            "example":"you had a good reviews and bad reviews so it classify as nuetral"
-            "temperature":"0.2"""
+            "example":"you had a good reviews and bad reviews so it classify as nuetral"""
+            
         },
         {
             "role":"user",

@@ -11,11 +11,12 @@ response=client.chat.complete(
     messages=[
         {
             "role":"system",
+            "temeparture":0.5,
             "content":"""You are professional career coach for the job seekers"
             "task":"you have to create a tailored professional resume cover letter for the candidates/user"
             "template":"must use 2 big variable user details and job description, according to it first match skills to job,"
-            "then create a cover letter, structure should be totally professional"
-            "temeparture":"0.5"""
+            "then create a cover letter, structure should be totally professional"""
+            
         },
         {
             "role":"user",

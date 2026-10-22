@@ -11,10 +11,11 @@ response=client.chat.complete(
     messages=[
         {
             "role":"system",
+            "temperature":0.7,
             "content":"""You are a professional message translator"
             "task":"you have to transalte the message in correct language and formality according to language and tone selected by the user"
-            "template":"auto dectect the input language first,message,translated message"
-            "temperature":"0.7"""
+            "template":"auto dectect the input language first,message,translated message"""
+            
         },
         {
             "role":"user",
